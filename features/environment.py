@@ -1,6 +1,9 @@
 import os
-
 from selenium import webdriver
+
+#base declared
+def before_all(context):
+    context.base_url = os.getenv('base_url', 'http://www.facebook.com')
 
 GRID_HUB_URL = os.environ.get('GRID_HUB_URL')
 
