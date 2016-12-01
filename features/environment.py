@@ -3,7 +3,7 @@ from selenium import webdriver
 
 #base declared
 def before_all(context):
-    context.base_url = os.getenv('base_url', 'http://www.facebook.com')
+    context.base_url = os.getenv('base_url', 'http://localhost.com')
 
 GRID_HUB_URL = os.environ.get('GRID_HUB_URL')
 
